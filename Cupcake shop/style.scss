@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+$primary:#ff7474;
+$secondary:#ffcf17;
+$white:#fff;
+$balck:#000;
+$lightGray:#e0e0e0;
+$fontFamily: 'Ubuntu',
+sans-serif;
+$fontSize: 16px;
+$transition: .3s ease;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary;
+}
+
+.mainHeader {
+    background-image: url(img/Green%20and%20Black%20Friday%20Sale%20Posternn%20.png);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    color: $white;
+}
+
+.btn-one {
+    background-color: $secondary;
+    border-radius: 70px;
+    padding: 8px;
+    color: $white;
+    text-transform: uppercase;
+    border: 1px solid $secondary;
+
+    &:hover {
+        background-color: transparent;
+        text-decoration: none;
+        border: 1px solid $secondary;
+        color: $white;
+    }
+}
+
+.btn-two {
+    border-radius: 70px;
+    padding: 8px;
+    color: $white;
+    border: 1px solid $white;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-three {
+    font-size: .8rem;
+    border: 1px solid $secondary;
+    background-color: $secondary;
+    color: $white;
+    border-radius: 70px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    position: relative;
+    top: -40px;
+
+    &:hover {
+        background-color: transparent;
+        text-decoration: none;
+        color: $secondary;
+    }
+}
+
+header {
+    .logo {
+        padding: 30px 30px;
+
+        i {
+            color: $white;
+
+            &:hover {
+                cursor: pointer;
+                color: $balck;
+            }
+        }
+
+        .logo-brand {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+                color: $white;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .navbar {
+        a {
+            color: $white;
+            margin-left: 20px;
+
+            &:hover {
+                color: $balck;
+                cursor: pointer;
+            }
+        }
+    }
+    .headings{
+        .col-md-6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            top: 50px;
+            h1{
+                font-size: 3.7rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-shadow: 4px 2px 3px $primary;
+                line-height: 65px;
+                text-align: left;
+                
+            }
+            p{
+                padding: 10px;
+                text-align: left;
+          
+            }
+            .btn-one{
+                position: relative;
+               
+            }
+            .btn-two{
+                position: relative;
+               
+            }
+            .imga{
+                position: relative;
+                bottom: 50px;
+                left: 20px;
+                -webkit-filter:drop-shadow(2px 2px 2px #ff5094);
+                filter: drop-shadow(4px 6px 10px #ff5094);
+           
+            }
+        }
+        
+    }
+}
+
+.product {
+    position: relative;
+    top: -120px;
+    -webkit-filter: drop-shadow(2px 2px 2px $primary);
+
+    .col-md-3:nth-child(1) {
+        filter: drop-shadow(4px 6px 10px #30100c);
+    }
+
+    .col-md-3:nth-child(2) {
+        filter: drop-shadow(4px 6px 10px #ffcf5e);
+    }
+
+    .col-md-3:nth-child(3) {
+        filter: drop-shadow(4px 6px 10px #ff5094);
+    }
+
+    .col-md-3:nth-child(4) {
+        filter: drop-shadow(4px 6px 10px #ff532d);
+    }
+}
+
+.deals {
+    position: relative;
+    top: -20px;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: .9rem;
+        padding-top: 10px;
+    }
+
+    .col-md-1 {
+        ul {
+            border-radius: 30px;
+            border: 1px solid transparent;
+            background-color: $primary;
+            text-decoration: none;
+            color: $white;
+            width: 30px;
+            margin-top: 30px;
+
+            li {
+                line-height: .5px;
+                text-align: center;
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    padding-top: 10px;
+                    line-height: .7px;
+
+                }
+
+                p {
+                    font-weight: 100;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+
+    .col-md-2 {
+        img {
+            position: relative;
+            right: 40px;
+        }
+    }
+
+    .col-md-3 {
+        text-align: left;
+        position: relative;
+        left: 30px;
+        padding: 40px 20px 20px 50px;
+
+        i {
+            border: 1px solid $secondary;
+            background-color: $secondary;
+            color: $white;
+            border-radius: 70px;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: $balck;
+            font-weight: 700;
+        }
+
+        p {
+            padding-bottom: 20px;
+            font-weight: 100;
+            font-size: .6rem;
+            position: relative;
+            top: -15px;
+            left: 5px;
+            color: darkgray;
+        }
+
+        .lead {
+            font-size: 1rem;
+            font-weight: 600;
+            position: relative;
+            top: -45px;
+            color: $balck;
+        }
+    }
+
+    .carousel-control-prev-icon {
+        border: 1px solid $primary;
+        background-color: $primary;
+        border-radius: 70px;
+    }
+
+    .carousel-control-next-icon {
+        border: 1px solid $primary;
+        background-color: $primary;
+        border-radius: 70px;
+    }
+}
+
+.istaknut {
+    background-image: url(img/Webp.net-resizeimage.png);
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    color: $white;
+
+    .col-md-7 {
+        position: relative;
+        bottom: -170px;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: .7rem;
+            padding-bottom: 30px;
+        }
+    }
+
+    .col-md-5 {
+        img {
+            height: 100%;
+            width: 600px;
+            position: relative;
+            left: -27px;
+            top: -60px;
+        }
+
+    }
+
+    .col-md-4 {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        line-height: -10px;
+
+        h5 {
+            font-weight: 800;
+        }
+
+        h6 {
+            font-size: 1rem;
+            font-weight: 200;
+        }
+
+        p {
+            font-size: .8rem;
+            font-weight: 200;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
